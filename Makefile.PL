@@ -37,9 +37,9 @@ recommends 'Test::Pod'             => '1.48';
 recommends 'Test::Pod::Coverage'   => '1.08';
 
 
-homepage 'http://padre.perlide.org/trac/wiki/Features/Perl5Debugger';
-bugtracker 'http://padre.perlide.org/trac/wiki/Tickets';
-repository 'http://svn.perlide.org/padre/trunk/Debug-Client/';
+homepage 'https://github.com/PadreIDE/Debug-Client';
+bugtracker 'https://github.com/PadreIDE/Debug-Client/issues';
+repository 'git://github.com/PadreIDE/Debug-Client.git';
 
 no_index 'directory' => qw{ eg t };
 
