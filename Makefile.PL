@@ -16,6 +16,7 @@ requires 'Term::ReadLine'       => '1.14';
 requires 'Term::ReadLine::Gnu'  => '1.24' if !win32;
 
 test_requires 'File::HomeDir'   => '1';
+test_requires 'File::Temp'      => '0.2304';
 test_requires 'List::Util'      => '1.38';
 test_requires 'Test::CheckDeps' => '0.01';
 test_requires 'Test::Class'     => '0.42';
@@ -24,6 +25,7 @@ test_requires 'Test::More'      => '1.001003';
 test_requires 'Test::Requires'  => '0.07';
 test_requires 'Win32'           => '0.49' if win32;
 test_requires 'Win32::Process'  => '0.16' if win32;
+test_requires 'parent'          => '0.228';
 test_requires 'version'         => '0.9908';
 
 
