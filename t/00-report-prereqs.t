@@ -33,6 +33,7 @@ my @modules = qw(
 	List::Util
 	PadWalker
 	Term::ReadLine
+	Term::ReadLine::Gnu
 	Test::CheckDeps
 	Test::Class
 	Test::Deep
