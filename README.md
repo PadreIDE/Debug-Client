@@ -14,7 +14,7 @@ fixes for the module are worth downloading.
 
 ### Version 0.29
 
-# INSTALLATION
+## INSTALLATION
  
 To install this module, run the following commands:
  
@@ -23,7 +23,7 @@ To install this module, run the following commands:
     make test
     make install
  
-# SUPPORT AND DOCUMENTATION
+## SUPPORT AND DOCUMENTATION
  
 After installing, you can find documentation for this module with the
 perldoc command.
@@ -45,7 +45,7 @@ You can also look for information at:
         http://search.cpan.org/dist/Debug-Client/
  
  
-# LICENSE AND COPYRIGHT
+## LICENSE AND COPYRIGHT
  
 Copyright (C) 2008-2011 Gabor Szabo
  
