@@ -7,6 +7,7 @@ requires_from 'lib/Debug/Client.pm';
 perl_version '5.010001';
 
 requires 'Carp'           => '1.3301';
+requires 'Exporter'       => '5.70';
 requires 'IO::Socket::IP' => '0.29';
 requires 'PadWalker'      => '1.98';
 requires 'Term::ReadLine' => '1.14';
