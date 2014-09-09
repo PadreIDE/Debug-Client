@@ -1,5 +1,6 @@
-Debug-Client
- 
+Debug::Client   [![Build Status](https://travis-ci.org/PadreIDE/Debug-Client.png?branch=master)](https://travis-ci.org/PadreIDE/Debug-Client)
+==========
+
 The README is used to introduce the module and provide instructions on
 how to install the module, any machine dependencies it may have (for
 example C compilers and installed libraries) and any other information
@@ -10,9 +11,10 @@ file from a module distribution so that people browsing the archive
 can use it to get an idea of the module's uses. It is usually a good idea
 to provide version information here so that people can decide whether
 fixes for the module are worth downloading.
- 
- 
-INSTALLATION
+
+### Version 0.29
+
+## INSTALLATION
  
 To install this module, run the following commands:
  
@@ -21,7 +23,7 @@ To install this module, run the following commands:
     make test
     make install
  
-SUPPORT AND DOCUMENTATION
+## SUPPORT AND DOCUMENTATION
  
 After installing, you can find documentation for this module with the
 perldoc command.
@@ -43,23 +45,15 @@ You can also look for information at:
         http://search.cpan.org/dist/Debug-Client/
  
  
-LICENSE AND COPYRIGHT
+## LICENSE AND COPYRIGHT
  
 Copyright (C) 2008-2011 Gabor Szabo
  
-<<<<<<< HEAD
-Some parts copyright (C) 2011-2013 Kevin Dawson
-=======
 Some parts copyright (C) 2011-2014 Kevin Dawson
->>>>>>> 03532daeefc696338a20475d983ec7538401b26e
  
  
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
 by the Free Software Foundation; or the Artistic License.
  
-<<<<<<< HEAD
 See http://dev.perl.org/licenses/ for more information.
-=======
-See http://dev.perl.org/licenses/ for more information.
->>>>>>> 03532daeefc696338a20475d983ec7538401b26e
