@@ -341,7 +341,7 @@ sub get_y_zero {
 	require PadWalker if 0; #forces PadWalker to be a requires not a test_requires
 
 	# say 'running on perl '. $PERL_VERSION;
-	if ( $PERL_VERSION >= 5.017006 ) {
+	if ( $PERL_VERSION >= 5.017006 && $PERL_VERSION <= 5.021003 ) {
 
 		# say 'using y=1 instead as running on perl ' . $PERL_VERSION;
 		$self->_send('y 1');
