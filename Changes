@@ -1,5 +1,7 @@
 Changes for Debug::Client
 
+ - Fix build and test failures under Perl 5.26 when '.' is not in @INC (KENTNL, PR #7)
+
 0.30 2017-06-19
  - Merged PR #5 (Fixed test failure due to perl regression fix in 5.21.3), thanks @TBSliver.
 
