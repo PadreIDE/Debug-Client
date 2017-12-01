@@ -1,5 +1,6 @@
 Debug::Client
-[![Build Status](https://travis-ci.org/PadreIDE/Debug-Client.png?branch=master)](https://travis-ci.org/PadreIDE/Debug-Client) [![Build status](https://ci.appveyor.com/api/projects/status/m8o7bf573a3i3p9a?svg=true)](https://ci.appveyor.com/project/JJ/debug-client)
+[![Build Status](https://travis-ci.org/PadreIDE/Debug-Client.png?branch=master)](https://travis-ci.org/PadreIDE/Debug-Client)
+[![Build status](https://ci.appveyor.com/api/projects/status/nkr4afuq1gk87b1x?svg=true)](https://ci.appveyor.com/project/szabgab/debug-client)
 ==========
 
 The README is used to introduce the module and provide instructions on
