@@ -23,7 +23,7 @@ In order to release a new version of this project
 
     perl Makefile.PL
     make
-    make test
+    RELEASE_TESTING=1 make test
     make manifest
     make dist
 
