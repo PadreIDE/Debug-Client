@@ -690,10 +690,6 @@ __END__
 
 Debug::Client - debugger client side code for Padre, The Perl IDE.
 
-=head1 VERSION
-
-This document describes Debug::Client version: 0.30
-
 =head1 SYNOPSIS
 
   use Debug::Client;
