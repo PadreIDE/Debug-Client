@@ -1,0 +1,13 @@
+.git/
+.github/
+.gitignore
+blib/
+.travis.yml
+appveyor.yml
+Makefile$
+MANIFEST.bak
+MANIFEST.SKIP
+MYMETA.json
+MYMETA.yml
+pm_to_blib
+

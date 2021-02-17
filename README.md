@@ -14,7 +14,18 @@ can use it to get an idea of the module's uses. It is usually a good idea
 to provide version information here so that people can decide whether
 fixes for the module are worth downloading.
 
-### Version 0.29
+## RELEASE
+
+In order to release a new version of this project
+
+    Update the version number in lib/Debug/Client.pm
+    Update the Changes file
+
+    perl Makefile.PL
+    make
+    make test
+    make manifest
+    make dist
 
 ## INSTALLATION
 
