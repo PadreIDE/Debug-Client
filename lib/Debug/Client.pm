@@ -1108,7 +1108,7 @@ Alexandr Ciornii E<lt>alexchorny@gmail.comE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2008-2011 Gabor Szabo
+Copyright 2008-2021 Gabor Szabo
 
 Some parts Copyright E<copy> 2011-2014 Kevin Dawson and CONTRIBUTORS as listed above.
 
