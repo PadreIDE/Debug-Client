@@ -16,6 +16,10 @@ fixes for the module are worth downloading.
 
 ## RELEASE
 
+Install prerequisites:
+
+    cpanm --installdeps .
+
 In order to release a new version of this project
 
     Update the version number in lib/Debug/Client.pm
@@ -35,6 +39,11 @@ To install this module, run the following commands:
     make
     make test
     make install
+
+On Ubuntu you might need to install cpanm Term::ReadLine::Gnu manually:
+
+    sudo apt install libreadline-dev
+    cpanm Term::ReadLine::Gnu
 
 ## SUPPORT AND DOCUMENTATION
 
