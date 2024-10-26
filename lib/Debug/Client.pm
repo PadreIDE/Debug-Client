@@ -10,7 +10,7 @@ no if $] > 5.017010, warnings => 'experimental::smartmatch';
 use English qw( -no_match_vars );
 local $OUTPUT_AUTOFLUSH = 1;
 
-our $VERSION = '0.31';
+our $VERSION = '0.32';
 
 use Term::ReadLine;
 if ( $OSNAME eq 'MSWin32' ) {
