@@ -234,28 +234,12 @@ sub set_breakpoint {
 	$self->_prompt;
 
 	# if it was successful no reply
-	given ( $self->{buffer} ) {
-		when ( $_ =~ /^Subroutine [\w:]+ not found[.]/sxm ) {
-			return 0;
-		}
-		when ( $_ =~ /^Line \d+ not breakable[.]/sxm ) {
-			return 0;
-		}
-		when ( $_ =~ /^\d+ levels deep in subroutine calls!/sxm ) {
-			return 0;
-		}
-		when ( $_ =~ /^Already in/m ) {
-			return 1;
-		}
-		when ( $_ =~ /\S/sxm ) {
-
-			# say 'Non-whitespace charter found';
-			return 0;
-		}
-		default {
-			return 1;
-		}
-	}
+	return 0 if $self->{buffer} =~ /^Subroutine [\w:]+ not found[.]/sxm;
+	return 0 if $self->{buffer} =~ /^Line \d+ not breakable[.]/sxm;
+	return 0 if $self->{buffer} =~ /^\d+ levels deep in subroutine calls!/sxm;
+	return 1 if $self->{buffer} =~ /^Already in/m;
+	return 0 if $self->{buffer} =~ /\S/sxm; # say 'Non-whitespace charter found';
+	return 1;
 }
 
 #######
