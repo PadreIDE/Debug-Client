@@ -20,6 +20,10 @@ Install prerequisites:
 
     cpanm --installdeps .
 
+Install release dependencies:
+
+    cpanm install Test::Pod Test::Pod::Coverage
+
 In order to release a new version of this project
 
     Update the version number in lib/Debug/Client.pm
