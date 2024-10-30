@@ -5,8 +5,8 @@ on:
     branches: '*'
   pull_request:
     branches: '*'
-  schedule:
-    - cron: '42 5 * * *'
+    #  schedule:
+    #    - cron: '42 5 * * *'
 
 # Build the module on several versions of Perl using an image that already has a lot of modules installed.
 # This will provide a fast feedback if a commit broke anything in the unit-tests.
