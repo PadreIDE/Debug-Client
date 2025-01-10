@@ -7,4 +7,4 @@ inc/
 pm_to_blib
 MANIFEST
 MANIFEST.bak
-Debug-Client-*.tar.gz
+Debug-Client-*

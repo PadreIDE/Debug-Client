@@ -37,7 +37,7 @@ In order to release a new version of this project
 
 Tag the version in git with the appropriate version number:
 
-    git tag -a v0.33 -m v0.33
+    git tag -a v0.34 -m v0.34
     git push --tags
 
 
