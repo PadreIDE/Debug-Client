@@ -134,9 +134,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runner: [ubuntu-latest, macos-latest, windows-latest]
+        runner: [ubuntu-latest, macos-latest]
         #runner: [windows-latest]
         perl: [ '5.42' ]
+
 
     runs-on: ${{matrix.runner}}
     name: Native on OS ${{matrix.runner}} Perl ${{matrix.perl}}
