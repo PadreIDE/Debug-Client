@@ -8,7 +8,7 @@ on:
 
 # Build the module on several versions of Perl using an image that already has a lot of modules installed.
 # This will provide a fast feedback if a commit broke anything in the unit-tests.
-# Using 5.32 we also create the tar.gz file and save it as an artifact.
+# Using 5.42 we also create the tar.gz file and save it as an artifact.
 #
 # Once this job passed we launch several jobs in parallel
 # 1) Verify that we can install the created distribution on many versions of Perl using a Linux Docker image with vanilla Perl.
@@ -61,7 +61,7 @@ jobs:
             make test
 
       - name: Create release
-        if: ${{ matrix.perl-version == '5.32' }}
+        if: ${{ matrix.perl-version == '5.42' }}
         run: |
             # Increase the version number by 0.000001 so in the reports we can be sure we are using the code to be released.
             perl -i -p -e "s/VERSION\s*=\s*'(\d+\.\d+)'/q{VERSION = '} . (\$1 + 0.01) . q{'}/e" lib/Debug/Client.pm
@@ -71,7 +71,7 @@ jobs:
             make dist
 
       - name: Archive artifacts
-        if: ${{ matrix.perl-version == '5.32' }}
+        if: ${{ matrix.perl-version == '5.42' }}
         uses: actions/upload-artifact@v6
         with:
           name: the-release
@@ -136,7 +136,7 @@ jobs:
       matrix:
         runner: [ubuntu-latest, macos-latest, windows-latest]
         #runner: [windows-latest]
-        perl: [ '5.32' ]
+        perl: [ '5.42' ]
 
     runs-on: ${{matrix.runner}}
     name: Native on OS ${{matrix.runner}} Perl ${{matrix.perl}}
