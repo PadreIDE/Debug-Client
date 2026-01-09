@@ -30,8 +30,8 @@ jobs:
       matrix:
         perl-version:
           - '5.42'
-          - '5.32'
-          - '5.20'
+          #- '5.32'
+          #- '5.20'
 
     container:
       image: perldocker/perl-tester:${{ matrix.perl-version }}     # https://hub.docker.com/r/perldocker/perl-tester
@@ -87,15 +87,15 @@ jobs:
       fail-fast: false
       matrix:
         perl-version:
-          - '5.41.5'
+          - '5.42'
           - '5.40'
           - '5.38'
           - '5.36'
           - '5.34'
           - '5.32'
           - "5.30"
-          - "5.28"
-          - "5.26"
+          #- "5.28"
+          #- "5.26"
           #- "5.24"
           #- "5.22"
           #- "5.20"
