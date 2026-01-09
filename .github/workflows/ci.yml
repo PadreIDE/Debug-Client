@@ -38,7 +38,7 @@ jobs:
 
     name: Build on Linux with Perl ${{ matrix.perl-version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install prerequisites
         run: |
@@ -72,7 +72,7 @@ jobs:
 
       - name: Archive artifacts
         if: ${{ matrix.perl-version == '5.32' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: the-release
           path: |
@@ -114,7 +114,7 @@ jobs:
     name: Test on ${{ matrix.perl-version }}
     steps:
       - name: Download a single artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: the-release
 
@@ -143,7 +143,7 @@ jobs:
 
     steps:
       - name: Download a single artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: the-release
 
